@@ -7,18 +7,19 @@
         body {
             margin: 0;
             padding: 0;
-            background: #fafafa;
+            background: #000000; /* komplett schwarz */
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-        }
+            }
+
         img {
-            max-width: 90%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        }
+            max-width: 90vw;   /* niemals breiter als der Bildschirm */
+            max-height: 90vh;  /* niemals höher als der Bildschirm */
+            object-fit: contain; /* verhindert Abschneiden */
+            border-radius: 4px;
+            }
     </style>
 
     <!-- 
